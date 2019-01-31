@@ -1,6 +1,6 @@
 package no.hvl.dat110.messaging;
 
-import java.util.Arrays;
+
 
 public class Message {
 
