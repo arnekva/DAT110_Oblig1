@@ -33,7 +33,9 @@ public class Connection {
 		// TODO
 		// encapsulate the data contained in the message and write to the output stream
 
-		throw new RuntimeException("not yet implemented");
+		message.encapsulate();
+		outStream.write(message.getData());
+//		throw new RuntimeException("not yet implemented");
 
 	}
 
