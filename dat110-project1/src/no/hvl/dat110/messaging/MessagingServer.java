@@ -27,7 +27,7 @@ public class MessagingServer {
 		Connection connection = null;
 
 		try {
-			welcomeSocket.accept();
+			connection = new Connection(welcomeSocket.accept());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
