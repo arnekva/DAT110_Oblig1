@@ -1,6 +1,6 @@
 package no.hvl.dat110.messaging;
 
-
+import java.util.Arrays;
 
 public class Message {
 
@@ -48,5 +48,10 @@ public class Message {
 		}
 //	   throw new RuntimeException("not yet implemented");
 		
+	}
+
+	@Override
+	public String toString() {
+		return "Message [payload=" + Arrays.toString(payload) + "]";
 	}
 }

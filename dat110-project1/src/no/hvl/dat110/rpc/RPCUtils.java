@@ -74,7 +74,7 @@ public class RPCUtils {
 
 	public static byte[] marshallInteger(byte rpcid, int x) {
 
-		byte[] encoded = new byte[128];
+		byte[] encoded = new byte[127];
 
 		encoded[0] = rpcid;
 		byte[] intToByte = ByteBuffer.allocate(4).putInt(x).array();
