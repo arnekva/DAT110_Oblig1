@@ -41,16 +41,20 @@ public class Controller {
 		while (!stop) {
 			
 			
-			System.out.println("love me forever 11111");
-			String i = Integer.toString(sensor.read());
-			display.write(i);
+			/*
+			 * Her har vi problemer med å lese og skrive uten at det stopper helt opp.
+			 */
+			
+			
+			
+//			String i = Integer.toString(sensor.read());
+//			display.write(i);
 
 			
-			System.out.println("love me forever 22222");
+			
 			stop = true;
 		}
-		// TODO:
-		// loop while reading from sensor and write to display via RPC
+	
 
 		stopdisplay.stop();
 		stopsensor.stop();
