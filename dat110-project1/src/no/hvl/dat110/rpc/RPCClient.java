@@ -8,7 +8,7 @@ public class RPCClient {
 	private Connection connection;
 	
 	/**
-	 * Test
+	 * 
 	 * @param server - Server
 	 * @param port - Port
 	 */
@@ -40,7 +40,6 @@ public class RPCClient {
 		
 		
 		Message request = new Message(rpcrequest);
-		System.out.println(request.toString());
 
 		connection.send(request);
 		

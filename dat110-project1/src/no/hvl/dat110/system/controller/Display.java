@@ -13,6 +13,7 @@ public class Display extends RPCStub {
 
 		byte[] mString = RPCUtils.marshallString(RPCID, message);
 		RPCClient displayclient = new RPCClient(Common.DISPLAYHOST, Common.DISPLAYPORT);
+		displayclient.connect();
 		byte[] call =displayclient.call(mString);
 		String svar = RPCUtils.unmarshallString(call);
 		System.out.println(svar);

@@ -29,25 +29,25 @@ public class Controller {
 
 		display = new Display();
 		sensor = new Sensor();
-
+		displayclient.connect();
+		sensorclient.connect();
 		displayclient.register(display);
 		sensorclient.register(sensor);
 		// register stop methods in the RPC middleware
 		displayclient.register(stopdisplay);
 		sensorclient.register(stopsensor);
-		
-		
-		
+
 		boolean stop = false;
 		while (!stop) {
-
+			
+			
+			System.out.println("love me forever 11111");
 			String i = Integer.toString(sensor.read());
 			display.write(i);
-			
-			if(i.equals("5")) {
-				stop = true;
-			}
 
+			
+			System.out.println("love me forever 22222");
+			stop = true;
 		}
 		// TODO:
 		// loop while reading from sensor and write to display via RPC
