@@ -34,6 +34,7 @@ public class Connection {
 		// encapsulate the data contained in the message and write to the output stream
 
 //		message.encapsulate();
+	
 		try {
 			outStream.write(message.encapsulate());
 		} catch (IOException e) {
