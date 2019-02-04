@@ -7,6 +7,11 @@ public class RPCClient {
 	private MessagingClient msgclient;
 	private Connection connection;
 	
+	/**
+	 * Test
+	 * @param server - Server
+	 * @param port - Port
+	 */
 	public RPCClient(String server, int port) {
 	
 		msgclient = new MessagingClient(server,port);
