@@ -37,22 +37,9 @@ public class Controller {
 		displayclient.register(stopdisplay);
 		sensorclient.register(stopsensor);
 
-		boolean stop = false;
-		while (!stop) {
-			
-			
-			/*
-			 * Her har vi problemer med å lese og skrive uten at det stopper helt opp.
-			 */
-			
-			
-			
-//			String i = Integer.toString(sensor.read());
-//			display.write(i);
-
-			
-			
-			stop = true;
+		for(int i = 0; i < N; i++) {
+			String temp = Integer.toString(sensor.read());
+			display.write(temp);
 		}
 	
 
